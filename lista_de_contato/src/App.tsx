@@ -1,10 +1,15 @@
-const Teste = 'Reinaldo'
+import { Provider } from 'react-redux'
+import ListaDeContatos from './containers/ListaDeContatos'
+import EstiloGlobal from './styles'
+
+import store from './store'
 
 function App() {
   return (
-    <>
-      <h1> Olá, {Teste}!</h1>
-    </>
+    <Provider store={store}>
+      <EstiloGlobal />
+      <ListaDeContatos />
+    </Provider>
   )
 }
 
