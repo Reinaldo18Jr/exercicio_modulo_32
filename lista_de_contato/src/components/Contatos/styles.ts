@@ -9,16 +9,6 @@ export const Card = styled.div`
   border-radius: 16px;
 `
 
-export const DadosDoContato = styled.input`
-  color: #000;
-  font-size: 18px;
-  line-height: 20px;
-  padding: 8px;
-  margin-bottom: 16px;
-  display: block;
-  width: 100%;
-`
-
 export const BarraAcoes = styled.div`
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding-top: 16px;
@@ -34,10 +24,6 @@ export const Botao = styled.button`
   background-color: #2f3640;
   border-radius: 8px;
   margin-right: 8px;
-`
-
-export const BotaoSalvar = styled(Botao)`
-  background-color: ${variaveis.verde};
 `
 
 export const BotaoCancelarRemover = styled(Botao)`

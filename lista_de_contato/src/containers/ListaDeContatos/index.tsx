@@ -2,18 +2,19 @@ import { useSelector } from 'react-redux'
 
 import { RootReducer } from '../../store'
 import Contatos from '../../components/Contatos'
-import { Container, Titulo } from './styles'
+import { Container, Titulo } from '../../styles'
 
 const ListaDeContatos = () => {
-  const { contatos } = useSelector((state: RootReducer) => state)
+  const { itens } = useSelector((state: RootReducer) => state.contatos)
 
   return (
     <Container>
       <Titulo>Lista de Contatos</Titulo>
       <ul>
-        {contatos.map((c) => (
+        {itens.map((c) => (
           <li key={c.descricaoNome}>
             <Contatos
+              id={c.id}
               descricaoNome={c.descricaoNome}
               descricaoEmail={c.descricaoEmail}
               descricaoTel={c.descricaoTel}
