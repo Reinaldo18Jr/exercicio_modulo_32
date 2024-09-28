@@ -12,18 +12,6 @@ const initialState: ContatosState = {
       descricaoNome: '',
       descricaoEmail: '',
       descricaoTel: ''
-    },
-    {
-      id: 2,
-      descricaoNome: '',
-      descricaoEmail: '',
-      descricaoTel: ''
-    },
-    {
-      id: 3,
-      descricaoNome: '',
-      descricaoEmail: '',
-      descricaoTel: ''
     }
   ]
 }
